@@ -29,6 +29,7 @@
     "axios": "^0.19.2",
     "better-ajv-errors": "^0.6.7",
     "consola": "^2.11.3",
+    "publicSuffixList": "git+https://github.com/gorhill/publicsuffixlist.js.git#semver:^1.0.0",
     "lodash": "^4.17.15",
     "tldts": "^5.6.10",
     "yargs": "^15.3.0"

@@ -35,6 +35,7 @@ describe('Configuration', () => {
                         'Validate',
                         'Deduplicate',
                         'InvertAllow',
+                        'SortByDomain',
                     ],
                 },
             ],
@@ -45,6 +46,7 @@ describe('Configuration', () => {
                 'Validate',
                 'Deduplicate',
                 'InvertAllow',
+                'SortByDomain',
             ],
         });
         expect(ret.valid).toBe(true);

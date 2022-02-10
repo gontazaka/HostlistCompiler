@@ -149,9 +149,8 @@ function loadEtcHostsRuleProperties(ruleText) {
  * @returns {String} hostname or null if cannot be extracted
  */
 function extractHostname(pattern) {
-    pattern.match(/^||([a-z0-9-.])\^$/);
-    const match = pattern.match(/^\|\|([a-z0-9-.]+)\^$/);
-    const hostname = match ? match[1] : null;
+    const match = pattern.match(/^(@@)?\|\|([a-z0-9-.]+)\^$/);
+    const hostname = match ? match[2] : null;
     return hostname || null;
 }
 
@@ -274,6 +273,7 @@ module.exports = {
     isJustDomain,
     isEtcHostsRule,
     loadEtcHostsRuleProperties,
+    extractHostname,
     loadAdblockRuleProperties,
     findModifier,
     removeModifier,

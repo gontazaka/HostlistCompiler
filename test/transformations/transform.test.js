@@ -31,7 +31,7 @@ dupl1
             exclusions,
             inclusions,
         };
-        const filtered = await transform(rules, configuration, ['RemoveComments', 'Validate', 'Deduplicate']);
+        const filtered = await transform(rules, configuration, ['RemoveComments', 'Validate', 'Deduplicate', 'SortByDomain']);
         expect(filtered).toHaveLength(2);
         expect(filtered).toEqual(['rule1', 'dupl1']);
     });

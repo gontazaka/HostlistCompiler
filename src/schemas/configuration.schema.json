@@ -41,7 +41,8 @@
           "Compress",
           "Validate",
           "Deduplicate",
-          "InvertAllow"
+          "InvertAllow",
+          "SortByDomain"
         ]
       }
     },
@@ -113,7 +114,8 @@
               "Compress",
               "Validate",
               "Deduplicate",
-              "InvertAllow"
+              "InvertAllow",
+              "SortByDomain"
             ]
           }
         },
